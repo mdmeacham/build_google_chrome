@@ -1,7 +1,12 @@
-# pyimi_server
-This is a quick, dirty, unfinished web server that imi_electron (the IGEL OS app in another repository) connects to in order to reach IMI.
+# build_google_chrome
+This is an **unsupported** script that automates the fetching of the latest Google Chrome browser and then the conversion to an IGEL OS custom partition.
+
 
 ## dependencies
 
-depends upon the pyimi library that's available here
-[pyimi](https://github.com/mdmeacham/pyimi).
+Script depends on the wget program for fetching the latest stable version of google chrome.  Before running this script, run:
+``apt-get install wget``
+
+## use
+running build_
+
