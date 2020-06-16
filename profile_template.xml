@@ -1,0 +1,37 @@
+<profile>
+<profile_id>1168487</profile_id>
+<profilename>CP Google Chrome Browser $VERSION</profilename>
+<firmware>
+<model>IGEL Universal Desktop LX</model>
+<version>10.05.100.01</version>
+</firmware>
+<description>Google Chrome Browser Custom Partition</description>
+<overwritesessions>false</overwritesessions>
+<is_master_profile>false</is_master_profile>
+<is_igel_os>true</is_igel_os>
+<settings>
+<pclass name="custom_partition.enabled">
+<pvalue instancenr="-1" variableExpression="" variableSubstitutionActive="false">true</pvalue>
+<variableSubstitutionActive>false</variableSubstitutionActive>
+</pclass>
+<pclass name="custom_partition.mountpoint">
+<pvalue instancenr="-1" variableExpression="" variableSubstitutionActive="false">/custom</pvalue>
+<variableSubstitutionActive>false</variableSubstitutionActive>
+</pclass>
+<pclass name="custom_partition.size">
+<pvalue instancenr="-1" variableExpression="" variableSubstitutionActive="false">300M</pvalue>
+<variableSubstitutionActive>false</variableSubstitutionActive>
+</pclass>
+</settings>
+<instancesettings>
+<instance classprefix="custom_partition.source%" serialnumber="-20e13100:1697894902f:-7ffd127.0.1.1">
+<ivalue classname="custom_partition.source%.autoupdate" variableExpression="" variableSubstitutionActive="false">true</ivalue>
+<ivalue classname="custom_partition.source%.url" variableExpression="" variableSubstitutionActive="false">https://igelrmserver:8443/ums_filetransfer/chrome_$VERSION/google-chrome-browser_$VERSION.inf</ivalue>
+<ivalue classname="custom_partition.source%.username" variableExpression="" variableSubstitutionActive="false">ADMIN</ivalue>
+<ivalue classname="custom_partition.source%.init_action" variableExpression="" variableSubstitutionActive="false">/custom/custompart-google-chrome-browser init</ivalue>
+<ivalue classname="custom_partition.source%.final_action" variableExpression="" variableSubstitutionActive="false">/custom/custompart-google-chrome-browser stop</ivalue>
+<ivalue classname="custom_partition.source%.crypt_password" variableExpression="" variableSubstitutionActive="false">00064322052b012c</ivalue>
+<ivalue classname="custom_partition.source%.password" variableExpression="" variableSubstitutionActive="false"/>
+</instance>
+</instancesettings>
+</profile>
